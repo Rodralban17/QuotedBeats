@@ -129,7 +129,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS configuration
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-] # In production, restrict this to your frontend URL
+] 
+
+STATIC_ROOT = BASE_DIR/"staticfiles"
 
 CORS_ALLOW_CREDENTIALS = True
 # Django REST Framework configuration
